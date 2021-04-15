@@ -1,0 +1,3 @@
+ wget https://downloads.sourceforge.net/project/quast/quast-5.0.2.tar.gz
+    tar -xzf quast-5.0.2.tar.gz
+python quast-5.0.2/metaquast.py ass_of_meta/final.contigs.fa ass_of_meta_two/final.contigs.fa
