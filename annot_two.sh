@@ -10,4 +10,4 @@
 module load bioinfo-tools
 module load prokka
 
-prokka --outdir prokk --prefix ann_two binning/bins_2/*.fa
+prokka --outdir prokktwo --prefix ann_two binning/bins_2/*.fa
