@@ -1,0 +1,78 @@
+mv binning.10.fa binning10.fa
+mv binning.11.fa binning11.fa
+mv binning.12.fa binning12.fa
+mv binning.13.fa binning13.fa
+mv binning.14.fa binning14.fa
+mv binning.15.fa binning15.fa
+mv binning.16.fa binning16.fa
+mv binning.17.fa binning17.fa
+mv binning.18.fa binning18.fa
+mv binning.19.fa binning19.fa
+mv binning.1.fa binning1.fa
+mv binning.2.fa binning2.fa
+mv binning.20.fa binning20.fa
+mv binning.21.fa binning21.fa
+mv binning.22.fa binning22.fa
+mv binning.23.fa binning23.fa
+mv binning.24.fa binning24.fa
+mv binning.25.fa binning25.fa
+mv binning.26.fa binning26.fa
+mv binning.3.fa binning3.fa
+mv binning.4.fa binning4.fa
+mv binning.5.fa binning5.fa
+mv binning.6.fa binning6.fa
+mv binning.7.fa binning7.fa
+mv binning.8.fa binning8.fa
+mv binning.9.fa binning9.fa
+cd ../
+mkdir unbinned
+mv bins_1/binning.unbinned.fa unbinned
+mv bins_2/binning_two.unbinned.fa unbinned
+cd bins_2
+mv binning_two.10.fa binning_two10.fa
+mv binning_two.11.fa binning_two11.fa
+mv binning_two.12.fa binning_two12.fa
+mv binning_two.13.fa binning_two13.fa
+mv binning_two.14.fa binning_two14.fa
+mv binning_two.15.fa binning_two15.fa
+mv binning_two.16.fa binning_two16.fa
+mv binning_two.17.fa binning_two17.fa
+mv binning_two.18.fa binning_two18.fa
+mv binning_two.19.fa binning_two19.fa
+mv binning_two.1.fa binning_two1.fa
+mv binning_two.2.fa binning_two2.fa
+mv binning_two.3.fa binning_two3.fa
+mv binning_two.4.fa binning_two4.fa
+mv binning_two.5.fa binning_two5.fa
+mv binning_two.6.fa binning_two6.fa
+mv binning_two.7.fa binning_two7.fa
+mv binning_two.8.fa binning_two8.fa
+mv binning_two.9.fa binning_two9.fa
+mv binning_two.20.fa binning_two20.fa
+mv binning_two.21.fa binning_two21.fa
+mv binning_two.22.fa binning_two22.fa
+mv binning_two.23.fa binning_two23.fa
+mv binning_two.24.fa binning_two24.fa
+mv binning_two.25.fa binning_two25.fa
+mv binning_two.26.fa binning_two26.fa
+mv binning_two.27.fa binning_two27.fa
+mv binning_two.28.fa binning_two28.fa
+mv binning_two.29.fa binning_two29.fa
+mv binning_two.30.fa binning_two30.fa
+mv binning_two.31.fa binning_two31.fa
+mv binning_two.32.fa binning_two32.fa
+mv binning_two.33.fa binning_two33.fa
+cd ../
+sbatch checkem.sh
+sbatch checkem_two.sh
+mkdir removed_bins
+mv bins_1/binning10.fa removed_bins
+mv bins_1/binning12.fa removed_bins
+mv bins_1/binning23.fa removed_bins
+mv bins_1/binning26.fa removed_bins
+mv bins_2/binning_two3.fa removed_bins
+mv bins_2/binning_two4.fa removed_bins
+mv bins_2/binning_two22.fa removed_bins
+mv bins_2/binning_two33.fa removed_bins
+mv bins_2/binning_two31.fa removed_bins
+mv bins_2/binning_two27.fa removed_bins
