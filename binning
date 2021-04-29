@@ -1,4 +1,4 @@
 module load bioinfo-tools
 module load MetaBat
 metabat -i ass_of_meta/final.contigs.fa -o bins_1
-metabat -i ass_of_meta_two/fina.contigs.fa -o bins_2
+metabat -i ass_of_meta_two/final.contigs.fa -o bins_2
