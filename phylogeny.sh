@@ -28,4 +28,4 @@ ln -s $bins/*.faa ~/Thrash/phylogeny/input/metagenome
 done
 
 cd ~/Thrash/phylogeny
-python phylogeny.py -i metagenome -d phylophlan
+python phylophlan.py -i metagenome -d phylophlan
