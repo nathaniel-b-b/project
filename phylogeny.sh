@@ -20,7 +20,11 @@ ln -s /sw/apps/bioinfo/phylophlan/0.99/snowy/bin/data/ppaalns/ppa.aln.tar.bz2 ~/
 ln -s /sw/apps/bioinfo/phylophlan/0.99/snowy/bin/taxcuration/* ~/Thrash/phylogeny/taxcuration
 ln -s /sw/apps/bioinfo/phylophlan/0.99/snowy/bin/phylophlan.py ~/Thrash/phylogeny
 
-for bins in 
+cd ~/Thrash/prokk
+
+for bins in *.fa
+do
+ln -s $bins/*.faa ~/Thrash/phylogeny/input/metagenome
 
 cd ~/Thrash/phylogeny
 python phylogeny.py -i metagenome -d phylophlan
