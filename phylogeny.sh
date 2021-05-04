@@ -25,6 +25,7 @@ cd ~/Thrash/prokk
 for bins in *.fa
 do
 ln -s $bins/*.faa ~/Thrash/phylogeny/input/metagenome
+done
 
 cd ~/Thrash/phylogeny
 python phylogeny.py -i metagenome -d phylophlan
