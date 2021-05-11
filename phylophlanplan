@@ -1,0 +1,9 @@
+mkdir phylogeny
+cd phylogeny
+mkdir input
+mkdir input/metagenome
+mkdir data
+mkdir data/metagenome
+mkdir output
+mkdir output/metagenome
+sbatch ../phylogeny.sh
