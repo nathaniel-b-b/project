@@ -1,0 +1,9 @@
+mkdir phylogeny_two
+cd phylogeny_two
+mkdir input
+mkdir output
+mkdir output/metagenome
+mkdir input/metagenome
+mkdir data
+mkdir data/metagenome
+sbatch ../phylogeny2.sh
