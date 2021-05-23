@@ -1,16 +1,291 @@
 Thrash [main directory]
 -ass_of_meta [assemblied metagenome]
+--final.contigs.fa.gz [final assembly results]
 -ass_of_meta_two [assemblied metagenome 2]
+--final.contigs.fa.gz [assembly results of second metagenome]
 -bin [trash]
 -binning [bins crated after binning]
+--bins_1
+---binning11.fa [contigs of bin]
+---binning13.fa [contigs of bin]
+---binning14.fa [contigs of bin]
+---binning15.fa [contigs of bin]
+---binning16.fa [contigs of bin]
+---binning17.fa [contigs of bin]
+---binning18.fa [contigs of bin]
+---binning19.fa [contigs of bin]
+---binning1.fa [contigs of bin]
+---binning20.fa [contigs of bin]
+---binning21.fa [contigs of bin]
+---binning22.fa [contigs of bin]
+---binning24.fa [contigs of bin]
+---binning25.fa [contigs of bin]
+---binning2.fa [contigs of bin]
+---binning3.fa [contigs of bin]
+---binning4.fa [contigs of bin]
+---binning5.fa [contigs of bin]
+---binning6.fa [contigs of bin]
+---binning7.fa [contigs of bin]
+---binning8.fa [contigs of bin]
+---binning9.fa [contigs of bin]
+--bins_2
+---binning_two10.fa [contigs of bin]
+---binning_two11.fa [contigs of bin]
+---binning_two12.fa [contigs of bin]
+---binning_two13.fa [contigs of bin]
+---binning_two14.fa [contigs of bin]
+---binning_two15.fa [contigs of bin]
+---binning_two16.fa [contigs of bin]
+---binning_two17.fa [contigs of bin]
+---binning_two18.fa [contigs of bin]
+---binning_two19.fa [contigs of bin]
+---binning_two1.fa [contigs of bin]
+---binning_two20.fa [contigs of bin]
+---binning_two21.fa [contigs of bin]
+---binning_two23.fa [contigs of bin]
+---binning_two24.fa [contigs of bin]
+---binning_two25.fa [contigs of bin]
+---binning_two26.fa [contigs of bin]
+---binning_two28.fa [contigs of bin]
+---binning_two29.fa [contigs of bin]
+---binning_two2.fa [contigs of bin]
+---binning_two30.fa [contigs of bin]
+---binning_two32.fa [contigs of bin]
+---binning_two5.fa [contigs of bin]
+---binning_two6.fa [contigs of bin]
+---binning_two7.fa [contigs of bin]
+---binning_two8.fa [contigs of bin]
+---binning_two9.fa [contigs of bin]
+--checkem_1
+---bins
+----binning[1-26]
+-----[for each] genes.faa
+-----[for each] genes.gff
+-----[for each] hmmer.analyze.txt
+-----[for each] hmmer.tree.txt
+---lineage.ms
+---storage
+--checkem_2
+---bins
+----binning_two[1-33]
+-----[for each] genes.faa
+-----[for each] genes.gff
+-----[for each] hmmer.analyze.txt
+-----[for each] hmmer.tree.txt
+---lineage.ms
+---storage
+--removed_bins [all bins removed after quality analysis of bins]
+---binning10.fa [removed from bins_1]
+---binning12.fa [removed from bins_1]
+---binning23.fa [removed from bins_1]
+---binning26.fa [removed from bins_1]
+---binning_two22.fa [removed from bins_2]
+---binning_two27.fa [removed from bins_2]
+---binning_two31.fa [removed from bins_2]
+---binning_two33.fa [removed from bins_2]
+---binning_two3.fa [removed from bins_2]
+---binning_two4.fa [removed from bins_2]
+--unbinned [contains all contigs not put in any bin]
+---binning_two.unbinned.fa
+---binning.unbinned.fa
 -data [trimmed RNA]
+--fastqc [fastqc results on all original data; html and zip files for each original file]
+---SRR4342129_1.paired.trimmed_fastqc.html
+---SRR4342129_1.paired.trimmed_fastqc.zip
+---SRR4342129_2.paired.trimmed_fastqc.html
+---SRR4342129_2.paired.trimmed_fastqc.zip
+---SRR4342133_1.paired.trimmed_fastqc.html
+---SRR4342133_1.paired.trimmed_fastqc.zip
+---SRR4342133_2.paired.trimmed_fastqc.html
+---SRR4342133_2.paired.trimmed_fastqc.zip
+---SRR4342137.1_fastqc.html
+---SRR4342137.1_fastqc.zip
+---SRR4342137.2_fastqc.html
+---SRR4342137.2_fastqc.zip
+---SRR4342139.1_fastqc.html
+---SRR4342139.1_fastqc.zip
+---SRR4342139.2_fastqc.html
+---SRR4342139.2_fastqc.zip
+--trimm [files of fastqc results on RNA after trimming; html and zip format for each file]
+---SRR4342137.1.trimmed_fastqc.html
+---SRR4342137.1.trimmed_fastqc.zip
+---SRR4342137.2.trimmed_fastqc.html
+---SRR4342137.2.trimmed_fastqc.zip
+---SRR4342139.1.trimmed_fastqc.html
+---SRR4342139.1.trimmed_fastqc.zip
+---SRR4342139.2.trimmed_fastqc.html
+---SRR4342139.2.trimmed_fastqc.zip
+--trimmed_RNA [files containing trimmed RNA sequences]
+---SRR4342137.1.trimmed.fastq.gz
+---SRR4342137.2.trimmed.fastq.gz
+---SRR4342139.1.trimmed.fastq.gz
+---SRR4342139.2.trimmed.fastq.gz
 -mapping [results of mapping]
+--index2.amb
+--index2.ann
+--index2.btw
+--index2.pa
+--index2.sa
+--maps1.sam
+--maps2.sam
+--maps3.sam
+--maps4.sam
 -phylogeny_one [phylophlan results]
+--data
+---also_data [unnecessary folder layer]
+----metagenome [contains files created during analysis named p0[X][X][X].int.sub.aln]
+----paaalns [contains various files created during analysis named p0[X][X][X].aln[.score]]
+----ppafull.[various suffices] [various files created during analysis]
+--metagenome
+---metagenome.tree.int.nwk [results of phylophlan analysis]
 -phylogeny_two [phylophlan results 2]
+--data
+---[same as in phylogeny_one/data/also_data]
+--input [input files for analysis; were removed in phylogeny_one due to storage limitations]
+---metagenome
+----binning_two10.fa.faa
+----binning_two11.fa.faa
+----binning_two12.fa.faa
+----binning_two13.fa.faa
+----binning_two14.fa.faa
+----binning_two15.fa.faa
+----binning_two16.fa.faa
+----binning_two17.fa.faa
+----binning_two18.fa.faa
+----binning_two19.fa.faa
+----binning_two1.fa.faa
+----binning_two20.fa.faa
+----binning_two21.fa.faa
+----binning_two23.fa.faa
+----binning_two24.fa.faa
+----binning_two25.fa.faa
+----binning_two26.fa.faa
+----binning_two28.fa.faa
+----binning_two29.fa.faa
+----binning_two2.fa.faa
+----binning_two30.fa.faa
+----binning_two32.fa.faa
+----binning_two5.fa.faa
+----binning_two6.fa.faa
+----binning_two7.fa.faa
+----binning_two8.fa.faa
+----binning_two9.fa.faa
+--output
+---metagenome
+----metagenome.tree.int.nwk [results of second phylophlan analysis]
+--phylophlan.py [program script that performs the analysis]
 -project [GitHub]
+--[All files here can be seen in the GitHub repository]
 -prokk [annotation results of DNA]
+--ann.err
+--ann.faa
+--ann.ffn
+--ann.fna
+--ann.fsa
+--ann.gbk
+--ann.gff
+--ann.log
+--ann.sqn
+--ann.tbl
+--ann.tsv
+--ann.txt
+--binning
+---bins_1
+----[same files as in binning/bins_1]
+--binning11.fa
+---[contains 10 files named binning11.fa.[X] where [X] is each of the suffices used for the ann.[X] files in prokk]
+--binning13.fa
+---[same as binning11.fa]
+--binning14.fa
+---[same as binning11.fa]
+--binning15.fa
+---[same as binning11.fa]
+--binning16.fa
+---[same as binning11.fa]
+--binning17.fa
+---[same as binning11.fa]
+--binning18.fa
+---[same as binning11.fa]
+--binning19.fa
+---[same as binning11.fa]
+--binning1.fa
+---[same as binning11.fa]
+--binning20.fa
+---[same as binning11.fa]
+--binning21.fa
+---[same as binning11.fa]
+--binning22.fa
+---[same as binning11.fa]
+--binning24.fa
+---[same as binning11.fa]
+--binning25.fa
+---[same as binning11.fa]
+--binning2.fa
+---[same as binning11.fa]
+--binning3.fa
+---[same as binning11.fa]
+--binning4.fa
+---[same as binning11.fa]
+--binning5.fa
+---[same as binning11.fa]
+--binning6.fa
+---[same as binning11.fa]
+--binning7.fa
+---[same as binning11.fa]
+--binning8.fa
+---[same as binning11.fa]
+--binning9.fa
+---[same as binning11.fa]
 -prokktwo [annotation results of DNA 2]
+--[same system as in prokk, but with the bins from binning/bins_2 used as the basis instead]
 -quast_results [results from quast]
+--latest [same as results_2021_04_23_10_00_48]
+---[see results_2021_04_23_10_00_48]
+--results_2021_04_23_10_00_48 [same as latest]
+---basic_stats
+----ass_of_meta_final.contigs_GC_content_plot.pdf
+----ass_of_meta_two_final.contigs_GC_content_plot.pdf
+----cumulative_plot.pdf
+----GC_content_plot.pdf
+----Nx_plot.pdf
+---icarus.html
+---icarus_viewers
+----contig_size_viewer.html
+---quast.log
+---report.html
+---report.pdf
+---report.txt
+---transposed_report.txt
 -raw [raw data]
+--SRR4342129_1.paired.trimmed.fastq.gz
+--SRR4342129_2.paired.trimmed.fastq.gz
+--SRR4342133_1.paired.trimmed.fastq.gz
+--SRR4342133_2.paired.trimmed.fastq.gz
+--SRR4342137.1.fastq.gz
+--SRR4342137.2.fastq.gz
+--SRR4342139.1.fastq.gz
+--SRR4342139.2.fastq.gz
 -RNAss [assemblied RNA]
+--checkpoints.txt [checkpoints of program]
+--done [message saying the program is done]
+--final.contigs.fa [final assemblied RNA contigs]
+--intermediate_contigs
+---k[119/21/29/39/59/79/99].addi.fa[.info]
+---k[119/21/29/39/59/79/99].bubble_seq.fa[.info]
+---k[119/21/29/39/59/79/99].contigs.fa[.info]
+---k[119/21/29/39/59/79/99].final.contigs.fa[.info]
+--log [log]
+--options.json [options]
 -RNAss_two [assemblied RNA 2]
+--checkpoints.txt [checkpoints of program]
+--done [message saying the program is done]
+--final.contigs.fa [final assemblied RNA contigs]
+--intermediate_contigs
+---k[119/21/29/39/59/79/99].addi.fa[.info]
+---k[119/21/29/39/59/79/99].bubble_seq.fa[.info]
+---k[119/21/29/39/59/79/99].contigs.fa[.info]
+---k[119/21/29/39/59/79/99].final.contigs.fa[.info]
+--log [log]
+--options.json [options]
+
+This file contains the structure of all files and folders used in the project at the time of its end at May 24th 2021, as well as short descriptions when necessary. Everything followed by a space and then [] describes the file. When [] is used in file names, it indicates multiple files exist; e.g. file[.info].txt would indicate there is one file named file.txt and one named file.info.txt. Likewise, file[1/2/3].txt would indicate three files [file1.txt, file2.txt and file3.txt]. [X] is used to denote a single number that has many variations.
