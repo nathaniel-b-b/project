@@ -1,0 +1,8 @@
+module load bioinfo-tools
+module load bwa
+bwa index -a is -p index2 raw/*.trimmed.*
+cd ~/Thrash/mapping
+bwa mem index2 ../raw/SRR4342129_1.paired.trimmed.fastq.gz > maps1.sam
+bwa mem index2 ../raw/SRR4342129_2.paired.trimmed.fastq.gz > maps2.sam
+bwa mem index2 ../raw/SRR4342133_1.paired.trimmed.fastq.gz > maps3.sam
+bwa mem index2 ../raw/SRR4342133_2.paired.trimmed.fastq.gz > maps4.sam
