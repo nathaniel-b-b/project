@@ -13,4 +13,6 @@ module load bioinfo-tools
 module load bwa
 
 for bins in binning/bins_2/*.fa
-bwa index binning/bins_2/$bins
+do
+bwa index $bins
+done
