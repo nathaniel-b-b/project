@@ -15,3 +15,4 @@ module load bwa
 for bins in binning/bins_1/*.fa
 do
 bwa index $bins 
+done
