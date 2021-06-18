@@ -7,15 +7,17 @@
 #SBATCH -t 16:00:00
 #SBATCH -J bwa
 
-#load modules
 module load bioinfo-tools
 module load bwa
 module load samtools
 
 cd ~/Thrash/binning/bins_1
 
-bwa mem -t 2 binning11.fa ~/Thrash/raw/SRR4342129_1.paired.trimmed.fastq.gz ~/Thrash/raw/SRR4342129_2.paired.trimmed.fastq.gz  > ~/Thrash/maps/bin11.sam
-samtools view -S -b ~/Thrash/maps/bin11.sam > ~/Thrash/maps/bin11.bam
-rm ~/Thrash/maps/bin11.sam
-samtools sort ~/Thrash/maps/bin11.bam > ~/Thrash/maps/bin11_sorted.bam
-rm ~/Thrash/maps/bin11.bam
+for bins in *.fa
+do
+bwa mem -t 2 $bins ~/Thrash/raw/SRR4342129_1.paired.trimmed.fastq.gz ~/Thrash/raw/SRR4342129_2.paired.trimmed.fastq.gz  > ~/Thrash/maps/$bins.sam
+samtools view -S -b ~/Thrash/maps/$bins.sam > ~/Thrash/maps/$bins.bam
+rm ~/Thrash/maps/$bins.sam
+samtools sort ~/Thrash/maps/$bins.bam > ~/Thrash/maps/$bins.sorted.bam
+rm ~/Thrash/maps/$bins.bam
+done
