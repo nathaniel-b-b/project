@@ -10,7 +10,9 @@
 module load bioinfo-tools
 module load htseq/0.9.1
 
-for bins in binning/bins_1/*.fa
+cd binning/bins_1
+
+for bins in *.fa
 do
 htseq-count -f bam -r pos -t CDS -i ID -s no ~/Thrash/maps/$bins.sorted.bam <(sed '/##FASTA/,$d' ~/Thrash/prokk/$bins/$bins.gff) > ~/Thrash/counts/$bins.readcount.out
 done
